@@ -1,0 +1,12 @@
+{
+  "eventName": "nextbus",
+  "url": "https://obfuscated.execute-api.us-west-2.amazonaws.com/eta/",
+  "requestType": "GET",
+  "query": {
+    "bus": "{{bus}}",
+    "stop": "{{stop}}"
+  },
+  "noDefaults": true,
+  "responseTemplate": "{{time}}",
+  "responseTopic": "{{PARTICLE_DEVICE_ID}}/hook-response/{{PARTICLE_EVENT_NAME}}"
+}
